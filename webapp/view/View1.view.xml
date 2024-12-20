@@ -1,0 +1,27 @@
+<mvc:View
+    controllerName="compressimages.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:unified="sap.ui.unified">
+    <App>
+        <Page title="Image Compression">
+            <content>
+                <VBox class="sapUiSmallMargin">
+                    <items>
+                        <unified:FileUploader
+                            id="fileUploader"
+                            fileType="jpg,jpeg,png"
+                            placeholder="Choose an image to upload..."
+                            change="onImageUpload" />
+                    </items>
+                </VBox>
+                <VBox class="sapUiSmallMargin">
+                    <items>
+                        <Text id="compressedImageText" text="Compressed image will be handled and sent to backend." />
+                    </items>
+                </VBox>
+            </content>
+        </Page>
+    </App>
+
+</mvc:View>
